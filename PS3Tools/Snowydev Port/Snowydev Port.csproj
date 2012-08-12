@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5F2DC81C-0B9C-42C0-A0E7-31F9961E0821}</ProjectGuid>
+    <ProjectGuid>{2B25FABD-95BF-47AB-8817-4DA30A06043E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PS3Tools</RootNamespace>
+    <RootNamespace>Snowydev_Port</RootNamespace>
     <AssemblyName>PS3Tools GUI Edition</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -54,7 +54,7 @@
     <Compile Include="CodeWatcher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CodeWatcher.designer.cs">
+    <Compile Include="CodeWatcher.Designer.cs">
       <DependentUpon>CodeWatcher.cs</DependentUpon>
     </Compile>
     <Compile Include="ConversionUtil.cs" />
@@ -74,36 +74,46 @@
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.designer.cs">
+    <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.designer.cs">
+    <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form3.designer.cs" />
+    <Compile Include="form3.designer.cs">
+      <DependentUpon>form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs" />
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="formspu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formspu.Designer.cs" />
+    <Compile Include="formspu.Designer.cs">
+      <DependentUpon>formspu.cs</DependentUpon>
+    </Compile>
     <Compile Include="HASHStuff.cs" />
     <Compile Include="LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadingScreen.Designer.cs" />
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="LocalStorageWatcher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LocalStorageWatcher.Designer.cs" />
+    <Compile Include="LocalStorageWatcher.Designer.cs">
+      <DependentUpon>LocalStorageWatcher.cs</DependentUpon>
+    </Compile>
     <Compile Include="NPD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,7 +129,9 @@
     <Compile Include="SPUeditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SPUeditor.Designer.cs" />
+    <Compile Include="SPUeditor.Designer.cs">
+      <DependentUpon>SPUeditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="SPUKnownFunction.cs" />
     <Compile Include="SPUMFC.cs" />
     <Compile Include="SPUOpcodeTable.cs" />
@@ -140,11 +152,21 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form3.resx" />
-    <EmbeddedResource Include="FormMain.resx" />
-    <EmbeddedResource Include="formspu.resx" />
-    <EmbeddedResource Include="LoadingScreen.resx" />
-    <EmbeddedResource Include="LocalStorageWatcher.resx" />
+    <EmbeddedResource Include="form3.resx">
+      <DependentUpon>form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formspu.resx">
+      <DependentUpon>formspu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalStorageWatcher.resx">
+      <DependentUpon>LocalStorageWatcher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -153,8 +175,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SPUeditor.resx" />
+    <EmbeddedResource Include="SPUeditor.resx">
+      <DependentUpon>SPUeditor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,7 +191,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\stripeblue1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ps3.ico" />
+    <None Include="Resources\rsz_1updatepic.png" />
+    <None Include="Resources\rsz_picture.png" />
+    <None Include="Resources\cooltext721619111.png" />
+    <None Include="Resources\cooltext720514656.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

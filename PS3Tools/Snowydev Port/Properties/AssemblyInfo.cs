@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PS3Tools GUI Edition")]
-[assembly: AssemblyDescription("PS3Tools GUI Edition is based off a collection of infamous CLI PS3 Tools")]
+[assembly: AssemblyDescription("A collection of infamous PS3 tools in a GUI form")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PS3Tools GUI Edition")]
-[assembly: AssemblyCopyright("Copyright © PSDev 2012")]
+[assembly: AssemblyCopyright("Copyright © PsDev 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6e0ca865-b735-4128-b754-a34ed8fd083d")]
+[assembly: Guid("5983d501-5760-4bff-b54a-c6392f40a64c")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("3.0.0.0")]
-[assembly: AssemblyFileVersion("3.0.0.3")]
+[assembly: AssemblyFileVersion("3.0.0.0")]
