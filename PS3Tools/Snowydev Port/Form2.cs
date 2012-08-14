@@ -158,8 +158,8 @@ namespace Snowydev_Port
                 StartInfo.RedirectStandardOutput = true;
                 StartInfo.UseShellExecute = false;
                 //required to redirect
-                StartInfo.CreateNoWindow = true;
-                //<---- creates no window, obviously
+                StartInfo.CreateNoWindow = false;
+                // we create the cmd window here because with out it the program will not respond and force close itself. // wierd error? 
                 myprocess.StartInfo = StartInfo;
                 myprocess.Start();
                 System.IO.StreamReader SR = myprocess.StandardOutput;
